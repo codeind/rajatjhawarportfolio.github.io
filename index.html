@@ -30,6 +30,12 @@
   #skills-section .skill-familiar{text-align:center;color:#999;margin:8px auto 0;max-width:820px}
   #skills-section .skill-familiar span{color:#ffbd39;font-weight:600;margin-right:6px}
   #Experience-section .resume-wrap{display:block}
+  #services-section .ms-badges-title{font-size:28px}
+  #services-section .ms-badge{display:flex;gap:16px;align-items:center;border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:16px 18px;margin-bottom:24px;background:#1a1a1a}
+  #services-section .ms-badge img{flex:0 0 64px}
+  #services-section .ms-badge h4{font-size:15px;line-height:1.35;color:#fff;margin:0 0 4px}
+  #services-section .ms-badge p{margin:0;font-size:13px;color:#999}
+  #services-section .ms-badge p span{color:#ffbd39}
 </style>
 </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -231,19 +237,19 @@
 				<div class="col-md-6 d-flex ftco-animate">
 					<div class="skill-group w-100">
 						<h3>Databases &amp; Warehousing</h3>
-						<ul class="skill-chips"><li>SQL</li><li>Azure SQL</li><li>SQL Server (SSMS)</li><li>DuckDB / MotherDuck</li><li>Data Warehousing</li><li>Dimensional Modeling (Star Schema)</li></ul>
+						<ul class="skill-chips"><li>SQL</li><li>Azure SQL</li><li>SQL Server (SSMS)</li><li>DuckDB / MotherDuck</li><li>Data Warehousing</li><li>Dimensional Modeling (Star Schema)</li><li>Stored Procedures</li><li>Query Performance Tuning</li></ul>
 					</div>
 				</div>
 				<div class="col-md-6 d-flex ftco-animate">
 					<div class="skill-group w-100">
 						<h3>Languages &amp; Processing</h3>
-						<ul class="skill-chips"><li>Python (Pandas, NumPy)</li><li>PySpark</li><li>R</li><li>Jupyter Notebooks</li><li>Git / GitHub</li></ul>
+						<ul class="skill-chips"><li>Python (Pandas, NumPy)</li><li>PySpark</li><li>R</li><li>Jupyter Notebooks</li><li>Git / GitHub</li><li>Matplotlib / Seaborn</li></ul>
 					</div>
 				</div>
 				<div class="col-md-6 d-flex ftco-animate">
 					<div class="skill-group w-100">
 						<h3>BI &amp; Reporting</h3>
-						<ul class="skill-chips"><li>Power BI (DAX, Power Query, Service)</li><li>Tableau</li><li>Excel (VBA, Pivot Tables)</li><li>KPI Dashboards</li></ul>
+						<ul class="skill-chips"><li>Power BI (DAX, Power Query, Service)</li><li>Tableau</li><li>Excel (VBA, Pivot Tables)</li><li>KPI Dashboards</li><li>Power Pivot</li><li>Power BI Gateway</li><li>Report Automation</li><li>Self-Service Analytics</li></ul>
 					</div>
 				</div>
 				<div class="col-md-6 d-flex ftco-animate">
@@ -255,11 +261,23 @@
 				<div class="col-md-6 d-flex ftco-animate">
 					<div class="skill-group w-100">
 						<h3>Machine Learning</h3>
-						<ul class="skill-chips"><li>Scikit-learn</li><li>Prophet Forecasting</li><li>Random Forest</li><li>XGBoost</li><li>Clustering</li><li>Anomaly Detection</li></ul>
+						<ul class="skill-chips"><li>Scikit-learn</li><li>Prophet Forecasting</li><li>Random Forest</li><li>XGBoost</li><li>Clustering</li><li>Anomaly Detection</li><li>K-Means</li><li>Feature Engineering</li><li>Model Evaluation</li></ul>
+					</div>
+				</div>
+							<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>Analytics &amp; Statistics</h3>
+						<ul class="skill-chips"><li>Statistical Analysis</li><li>Regression Analysis</li><li>Predictive Modeling</li><li>Demand Forecasting</li><li>Data Cleaning &amp; Wrangling</li><li>KPI Analysis</li><li>Ad Hoc Reporting</li></ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>Domain Knowledge</h3>
+						<ul class="skill-chips"><li>Operations Analytics</li><li>Supply Chain Analytics</li><li>Financial Reporting</li><li>P&amp;L Analysis</li><li>Healthcare Analytics</li><li>CRM Operations</li></ul>
 					</div>
 				</div>
 			</div>
-			<p class="skill-familiar"><span>Also familiar with:</span> Azure Databricks, SSIS, Azure DevOps CI/CD, Microsoft Purview, Unity Catalog, Medallion Architecture</p>
+			<p class="skill-familiar"><span>Also familiar with:</span> Azure Databricks, Azure Stream Analytics, Azure Cosmos DB, SSIS, Azure DevOps CI/CD, Microsoft Purview, Unity Catalog, BigQuery, Looker, Sigma, Hadoop, SPSS, Generative AI (LangGraph, RAG)</p>
 			<p class="skill-familiar"><span>Professional:</span> Requirements Gathering, Stakeholder Communication, Technical Documentation, Process Optimization, Project Management</p>
 		</div>
 	</section>
@@ -274,15 +292,6 @@
           </div>
         </div>
     		<div class="row justify-content-center">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="https://learn.microsoft.com/training/fabric/" target="_blank" rel="noopener" class="services-1">
-							<div class="desc">
-								<h3 class="mb-5">Microsoft Fabric Training</h3>
-								<h6>Microsoft Learn</h6>
-								<h6>Fabric Data Warehouses, End-to-End Analytics in Fabric, Streaming Ingestion, Power BI Workspaces</h6>
-							</div>
-						</a>
-					</div>
 					<div class="col-md-4 text-center d-flex ftco-animate">
 						<a href="https://coursera.org/share/c786849515d01f90f2b652ac9fc68b9a" class="services-1">
 						<!--<span class="icon">
@@ -357,7 +366,97 @@
 						</a>
 					</div>
 				</div>
-    	</div>
+    	
+				<div class="row justify-content-center pt-5 mt-4">
+					<div class="col-md-10 heading-section text-center">
+						<h2 class="mb-3 ms-badges-title">Microsoft Learn Badges</h2>
+						<p>Self-paced Microsoft training modules on Fabric, Azure data services and Power BI.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/fabric-data-warehouse.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Get started with data warehouses in Microsoft Fabric</h4>
+								<p>Completed Nov 2026 &middot; <span>Assessment passed</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/fabric-end-to-end.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Introduction to end-to-end analytics using Microsoft Fabric</h4>
+								<p>Completed Nov 2026 &middot; <span>Assessment passed</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/stream-analytics-synapse.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytics</h4>
+								<p>Completed Oct 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/stream-analytics.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Get started with Azure Stream Analytics</h4>
+								<p>Completed Oct 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/cosmos-db-nosql.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Introduction to Azure Cosmos DB for NoSQL</h4>
+								<p>Completed Oct 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/cosmos-db-explore.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Explore Azure Cosmos DB</h4>
+								<p>Completed Oct 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/powerbi-workspaces.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Create and manage workspaces in Power BI</h4>
+								<p>Completed Oct 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/powerbi-get-started.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Get started building with Power BI</h4>
+								<p>Completed Oct 2024</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex ftco-animate">
+						<div class="ms-badge w-100">
+							<img src="images/badges/data-analysis.png" alt="" width="64" height="64" loading="lazy">
+							<div>
+								<h4>Discover data analysis</h4>
+								<p>Completed Oct 2024</p>
+							</div>
+						</div>
+					</div>
+				</div>
+</div>
     </section>
  
 <!--
