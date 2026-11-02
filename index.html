@@ -22,7 +22,16 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+  <style>
+  #skills-section .skill-group{border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:24px 24px 18px;margin-bottom:30px}
+  #skills-section .skill-group h3{font-size:18px;margin-bottom:16px;color:#fff}
+  #skills-section .skill-chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+  #skills-section .skill-chips li{border:1px solid rgba(255,189,57,.45);color:#ccc;border-radius:999px;padding:4px 12px;font-size:14px;line-height:1.5}
+  #skills-section .skill-familiar{text-align:center;color:#999;margin:8px auto 0;max-width:820px}
+  #skills-section .skill-familiar span{color:#ffbd39;font-weight:600;margin-right:6px}
+  #Experience-section .resume-wrap{display:block}
+</style>
+</head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
@@ -61,7 +70,7 @@
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Rajat Jhawar</span></h1>
-			            <h2 class="mb-4">A Data Analyst</h2>
+			            <h2 class="mb-4">A Data Analyst &amp; Data Engineer</h2>
 			            <p><a href="https://www.linkedin.com/in/rajat-jhawar-098b971b2/" class="btn btn-primary py-3 px-4">LINKEDIN</a> <a href="#blog-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
@@ -87,10 +96,10 @@
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>I am Rajat Jhawar, with expertise in data analytics, machine learning, and business intelligence tools like Power BI and Tableau. Skilled in Python, SQL, and statistical analysis, I specialize in creating interactive dashboards, optimizing processes, and delivering data-driven insights. With a background in civil engineering from IIT Delhi and a Master's in Information Systems from Iowa State University, I combine technical knowledge with strong problem-solving and project management skills to drive impactful results.</p>
+		            <p>I am Rajat Jhawar, a data professional who builds the pipelines and the reporting on top of them. I design ETL/ELT pipelines on Azure and Microsoft Fabric, model data into star schemas with SQL and dbt, test data quality, and deliver curated datasets and dashboards in Power BI and Tableau. My work spans a 70,000-record CRM migration, SQL reporting for business teams, and operations analytics for 50+ university events. I hold a Master's in Information Systems from Iowa State University and a B.Tech in Civil Engineering from IIT Delhi.</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>Rajat Jhawar</span></li>
-						<li class="d-flex"><span>Profile:</span> <span>Data Analyst</span></li>
+						<li class="d-flex"><span>Profile:</span> <span>Data Analyst &amp; Data Engineer</span></li>
 						<li class="d-flex"><span>Domain:</span> <span>Data Analytics & Business intelligence</span></li>
 						<li class="d-flex"><span>Education:</span> <span>Master's in Information Systems, Bachelor's in Civil Eng.</span></li>
 		            	<!-- <li class="d-flex"><span>Address:</span> <span>Iowa, US</span></li>
@@ -103,7 +112,7 @@
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
               <div class="text">
               	<p class="mb-4">
-	                <span class="number" data-number="10">0</span>
+	                <span class="number" data-number="9">0</span>
 	                <span>Project complete</span>
                 </p>
                 <p><a href="https://drive.google.com/file/d/1Y-RWO2yK1Tc2kG8_S7_cHvXGroCSE5kI/view?usp=share_link" class="btn btn-primary py-3 px-3">Download Resume</a></p>
@@ -155,76 +164,49 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Professional Experience</h1>
+          	<h1 class="big big-2">Experience</h1>
             <h2 class="mb-4">Professional Experience</h2>
           </div>
         </div>
     		<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">Data Analyst</span>
-    					<h3>Sytex Solutions Inc.</h3>
-    					<span class="position">December 2025 - February 2026</span>
-    					<ul class="about-info mt-4 px-md-0 px-2">
-							<li class="d-flex"><span>- Partnered with internal business units to gather and document reporting and analytics requirements, translating stakeholder needs into structured specifications and delivering SQL-driven and Tableau-based solutions.</span></li>
-							<li class="d-flex"><span>- Served as a point of contact for cross-functional teams throughout the analytics delivery lifecycle — managing progress, addressing inquiries, and ensuring alignment with business requirements and governance standards.</span></li>
-							<li class="d-flex"><span>- Maintained thorough documentation for all analytical outputs including data definitions, process logic, and configuration notes, enabling easy maintenance and reuse by downstream teams.</span></li>
-							<li class="d-flex"><span>- Troubleshot data consistency and integrity issues across reporting pipelines, validating outputs and resolving discrepancies to maintain 99% reporting accuracy.</span></li>
-							<li class="d-flex"><span>- Developed Tableau dashboards and Excel-based reports to track KPIs and operational metrics, enabling stakeholders to monitor trends and performance more efficiently.</span></li>
-							<!-- <li class="d-flex"><span>Zip code:</span> <span>50014</span></li>
-							<li class="d-flex"><span>Email:</span> <span>rajatjhawar23@gmail.com</span></li>
-							<li class="d-flex"><span>Phone: </span> <span>+1 (515) 916-6211</span></li> -->
-						</ul>
-						<p class="mt-4"><span>Tools Used: </span> <span> Python (Pandas, NumPy), SQL, Excel, Tableau, Git</span></p>
-    				</div>
-    			</div>
-				
-				<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">Data Analyst</span>
+    			<div class="col-lg-4 d-flex">
+    				<div class="resume-wrap ftco-animate w-100">
+    					<span class="date">CRM &amp; Data Analyst</span>
     					<h3>Important Gifts Inc. (Changing The Present)</h3>
-    					<span class="position">October 2025 - December 2025</span>
+    					<span class="position">Oct 2025 – Dec 2025 &nbsp;|&nbsp; Apr 2026 – Sep 2026 &nbsp;·&nbsp; Remote</span>
     					<ul class="about-info mt-4 px-md-0 px-2">
-							<li class="d-flex"><span>- Managed an end-to-end CRM onboarding and migration project — from initial intake and requirements gathering through configuration, testing, and deployment — serving as the primary liaison between business stakeholders and the platform team.</span></li>
-							<li class="d-flex"><span>- Defined and documented business requirements for lifecycle stages, KPI definitions, and workflow logic; provided consultative guidance to internal users on platform capabilities, governance expectations, and process standards.</span></li>
-							<li class="d-flex"><span>- Built and maintained intake tracking for migration cases and workflow automation requests, ensuring all items progressed through required review stages with clear ownership and documented dispositions.</span></li>
-							<li class="d-flex"><span>- Reviewed and adjusted role-based access controls to enforce data governance, compliance, and appropriate access across user groups.</span></li>
-							<!-- <li class="d-flex"><span>Address:</span> <span>Iowa, US</span></li>
-							<li class="d-flex"><span>Zip code:</span> <span>50014</span></li>
-							<li class="d-flex"><span>Email:</span> <span>rajatjhawar23@gmail.com</span></li>
-							<li class="d-flex"><span>Phone: </span> <span>+1 (515) 916-6211</span></li> -->
+							<li class="d-flex"><span>- Led the migration of 70,000+ records from the legacy Highrise CRM to HubSpot, owning source-to-target mapping and data validation.</span></li>
+							<li class="d-flex"><span>- Built mapping frameworks that preserved 5+ legacy features and ran phased migration testing with reconciliation, cutting post-migration cleanup by 40%.</span></li>
+							<li class="d-flex"><span>- Authored a 200+ page migration manual covering architecture, pipelines and workflows, and standardized governance rules across 4 business units.</span></li>
 						</ul>
-						<p class="mt-4"><span>Tools Used: </span> <span> HubSpot CRM, Excel, Automation Workflows</span></p>
+						<p class="mt-4"><span>Tools Used: </span> <span>HubSpot CRM, Highrise CRM, Excel, Data Mapping, Workflow Automation</span></p>
     				</div>
     			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">Data and Operations Analyst</span>
-    					<h2>Iowa State University - Athletics Dept.</h2>
-    					<span class="position">August 2024 - August 2025</span>
+    			<div class="col-lg-4 d-flex">
+    				<div class="resume-wrap ftco-animate w-100">
+    					<span class="date">Data &amp; Reporting Analyst</span>
+    					<h3>Sytex Solutions Inc.</h3>
+    					<span class="position">Jan 2025 – Mar 2026 &nbsp;·&nbsp; Remote</span>
     					<ul class="about-info mt-4 px-md-0 px-2">
-							<li class="d-flex"><span>- Independently led supply and demand analysis for 50+ campus events — analyzing attendance, capacity, and
-								resource data to support data-driven staffing, scheduling, and inventory planning decisions.</span></li>
-							<li class="d-flex"><span>- Developed demand forecasts and capacity plans by analyzing historical trends and event-level data, improving crowd
-								management efficiency and operational readiness across the events portfolio.</span></li>
-							<li class="d-flex"><span>- Built Power BI and Tableau dashboards to track plan-to-actual KPIs, enabling operations leadership to monitor
-								performance, identify variances, and reallocate resources proactively.</span></li>
-							<li class="d-flex"><span>- Cleaned and validated 25,000+ records across operational systems, improving data consistency and accuracy by
-								25% and ensuring reliable inputs for planning and compliance reporting.</span></li>
-							<li class="d-flex"><span>- Supported S&OP-equivalent processes by preparing scenario analyses and data-driven summaries for leadership
-							planning reviews, contributing to improved resource allocation and operational efficiency.</span></li>
-							<!-- <li class="d-flex"><span>Zip code:</span> <span>50014</span></li>
-							<li class="d-flex"><span>Email:</span> <span>rajatjhawar23@gmail.com</span></li>
-							<li class="d-flex"><span>Phone: </span> <span>+1 (515) 916-6211</span></li> -->
+							<li class="d-flex"><span>- Wrote SQL transformations to build curated datasets for 8+ Tableau dashboards, reducing manual reporting effort by 30%.</span></li>
+							<li class="d-flex"><span>- Validated data quality across 5+ reporting pipelines, sustaining 99% accuracy for all downstream outputs.</span></li>
+							<li class="d-flex"><span>- Consolidated redundant data pulls into reusable SQL logic across 4 recurring workflows, cutting report preparation time by 25%.</span></li>
 						</ul>
-						<p class="mt-4"><span>Tools Used: </span> <span> Data Reporting, SQL, Advanced Excel, Data Validation, Quality Management, Demand Forecasting.</span></p>
-					</div>
+						<p class="mt-4"><span>Tools Used: </span> <span>SQL, Python (Pandas, NumPy), Tableau, Excel, Git</span></p>
+    				</div>
     			</div>
-    		</div>
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1Y-RWO2yK1Tc2kG8_S7_cHvXGroCSE5kI/view?usp=share_link" class="btn btn-primary py-4 px-5">Download Resume</a></p>
+    			<div class="col-lg-4 d-flex">
+    				<div class="resume-wrap ftco-animate w-100">
+    					<span class="date">Data &amp; Operations Analyst</span>
+    					<h3>Iowa State University</h3>
+    					<span class="position">Aug 2024 – Aug 2025 &nbsp;·&nbsp; Ames, IA</span>
+    					<ul class="about-info mt-4 px-md-0 px-2">
+							<li class="d-flex"><span>- Integrated attendance, capacity and resource data for 50+ campus events into a unified dataset, improving operational readiness by 20%.</span></li>
+							<li class="d-flex"><span>- Consolidated 3 operational systems into one data source, cleaning 25,000+ records and cutting manual aggregation time by 45%.</span></li>
+							<li class="d-flex"><span>- Built Power BI and Tableau dashboards on curated data tracking 10+ plan-to-actual KPIs, so leadership could reallocate resources in real time.</span></li>
+						</ul>
+						<p class="mt-4"><span>Tools Used: </span> <span>SQL, Power BI, Tableau, Advanced Excel, Demand Forecasting</span></p>
+    				</div>
     			</div>
     		</div>
     	</div>
@@ -236,136 +218,49 @@
 	  <div class="col-md-12 heading-section text-center ftco-animate">
 		  <h1 class="big big-2">Skills</h1>
 		<h2 class="mb-4">My Skills</h2>
-		<p>A versatile skill set in data analysis, programming, and business intelligence, empowering me to solve complex challenges and create impactful solutions across various domains.</p>
+		<p>Tools I use to move data from raw sources to trusted reporting.</p>
 	  </div>
 	</div>
 			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Python (Pandas, NumPy, Matplotlib, etc.)</h3>
-						<div class="progress">
-							 <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-							  aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							<span>90%</span>
-							  </div>
-						</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>Data Engineering</h3>
+						<ul class="skill-chips"><li>ETL/ELT Pipelines</li><li>dbt</li><li>Azure Data Factory</li><li>Azure Data Lake Storage</li><li>Azure Synapse</li><li>Microsoft Fabric</li><li>GitHub Actions CI</li></ul>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>SQL</h3>
-						<div class="progress">
-							 <div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-							  aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							<span>95%</span>
-							  </div>
-						</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>Databases &amp; Warehousing</h3>
+						<ul class="skill-chips"><li>SQL</li><li>Azure SQL</li><li>SQL Server (SSMS)</li><li>DuckDB / MotherDuck</li><li>Data Warehousing</li><li>Dimensional Modeling (Star Schema)</li></ul>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Excel(Pivot Tables, VBA)</h3>
-						<div class="progress">
-							 <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							<span>85%</span>
-							  </div>
-						</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>Languages &amp; Processing</h3>
+						<ul class="skill-chips"><li>Python (Pandas, NumPy)</li><li>PySpark</li><li>R</li><li>Jupyter Notebooks</li><li>Git / GitHub</li></ul>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Power BI</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							<span>90%</span>
-							  </div>
-						</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>BI &amp; Reporting</h3>
+						<ul class="skill-chips"><li>Power BI (DAX, Power Query, Service)</li><li>Tableau</li><li>Excel (VBA, Pivot Tables)</li><li>KPI Dashboards</li></ul>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Data Visualization</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							<span>90%</span>
-							  </div>
-						</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>Data Management &amp; CRM</h3>
+						<ul class="skill-chips"><li>Legacy System Migration</li><li>Source-to-Target Mapping</li><li>Data Quality Testing</li><li>Data Lineage &amp; Governance</li><li>HubSpot CRM</li></ul>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>DAX</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-							<span>75%</span>
-							  </div>
-						</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="skill-group w-100">
+						<h3>Machine Learning</h3>
+						<ul class="skill-chips"><li>Scikit-learn</li><li>Prophet Forecasting</li><li>Random Forest</li><li>XGBoost</li><li>Clustering</li><li>Anomaly Detection</li></ul>
 					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Data Modelling</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							<span>80%</span>
-							  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Tableau</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							<span>90%</span>
-							  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Azure Data Lake Storage</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							<span>80%</span>
-							  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>SPSS</h3>
-						<div class="progress">
-							 <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-							<span>60%</span>
-							  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>R</h3>
-						<div class="progress">
-							 <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-							  aria-valuemin="0" aria-valuemax="100" style="width:55%">
-							<span>65%</span>
-							  </div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<p class="mt-4"><span>Technical Skills: </span><span>JavaScript, Jupyter, ETL Processes, Predictive Modeling, Regression Analysis, Data Preprocessing, Clustering, Classification, Power Query, Qualitative & Quantitative Methods, Report Writing, Data-driven Insights, KPI Analysis, Business Process Management</span></p>
-					<p class="mt-4"><span>Soft Skills: </span><span>Critical Thinking, Process Optimization, Analytical Problem-Solving, Statistical Analysis, Project Management, Team Collaboration</span></p>
 				</div>
 			</div>
+			<p class="skill-familiar"><span>Also familiar with:</span> Azure Databricks, SSIS, Azure DevOps CI/CD, Microsoft Purview, Unity Catalog, Medallion Architecture</p>
+			<p class="skill-familiar"><span>Professional:</span> Requirements Gathering, Stakeholder Communication, Technical Documentation, Process Optimization, Project Management</p>
 		</div>
 	</section>
 
@@ -378,7 +273,16 @@
             <h2 class="mb-4">Certificates</h2>
           </div>
         </div>
-    		<div class="row">
+    		<div class="row justify-content-center">
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="https://learn.microsoft.com/training/fabric/" target="_blank" rel="noopener" class="services-1">
+							<div class="desc">
+								<h3 class="mb-5">Microsoft Fabric Training</h3>
+								<h6>Microsoft Learn</h6>
+								<h6>Fabric Data Warehouses, End-to-End Analytics in Fabric, Streaming Ingestion, Power BI Workspaces</h6>
+							</div>
+						</a>
+					</div>
 					<div class="col-md-4 text-center d-flex ftco-animate">
 						<a href="https://coursera.org/share/c786849515d01f90f2b652ac9fc68b9a" class="services-1">
 						<!--<span class="icon">
@@ -562,11 +466,11 @@
 				<div class="text mt-3 float-right d-block">
 					<div class="d-flex align-items-center mb-3 meta">
 					  <p class="mb-0">
-						  <span class="mr-2">May 2025 - June 2025</span>
+						  <span class="mr-2">March 2025 - July 2025</span>
 					  </p>
 				  </div>
 				  <h3 class="heading"><a href="https://github.com/codeind/Housing-Market-Dynamics-in-the-U.S.">U.S. Housing Market Trends and Forecasting with Tableau and Python</a></h3>
-				  <p>Developed interactive Tableau dashboards and Python visualizations to analyze U.S. housing trends using Zillow ZHVI data. Built forecasting models with Prophet and Random Forest, along with clustering and anomaly detection, enabling data-driven insights on market behavior and recovery.</p>
+				  <p>Cleaned and reshaped 20+ years of monthly Zillow data for 900+ U.S. metro areas in Python, flagged anomalies with Z-scores and Isolation Forest, forecast prices with Prophet and Random Forest (R² = 0.87), and built Tableau dashboards for trends, seasonality and post-COVID recovery.</p>
 				</div>
 			  </div>
 			</div>
@@ -607,11 +511,11 @@
 			<div class="text mt-3 float-right d-block">
 				<div class="d-flex align-items-center mb-3 meta">
 				  <p class="mb-0">
-					  <span class="mr-2">August 2024 - November 2024</span>
+					  <span class="mr-2">January 2024 - April 2024</span>
 				  </p>
 			  </div>
-			  <h3 class="heading"><a href="https://github.com/codeind/Iowa-Vehicle-Crash-Data-Analysis">Iowa Vehicle Crash Data Analysis Using Azure Portal</a></h3>
-			  <p>Comprehensive analysis of Iowa vehicle crash data using advanced analytics, machine learning, and visualization tools to identify patterns, reduce crash risks, and improve road safety. Includes datasets on crashes, injuries, and driver behavior from the Iowa Data Portal.</p>
+			  <h3 class="heading"><a href="https://github.com/codeind/Iowa-Vehicle-Crash-Data-Analysis">Iowa Vehicle Crash Data Pipeline on Azure</a></h3>
+			  <p>Built an Azure pipeline for Iowa DOT crash data: Azure Data Factory ingestion into Data Lake Storage, PySpark cleaning on Synapse, curated tables in Azure SQL and Microsoft Fabric, and Power BI dashboards that show high-risk locations, crash patterns and injury trends.</p>
 			</div>
 		  </div>
 		</div>
@@ -667,7 +571,7 @@
 			<div class="text mt-3 float-right d-block">
 				<div class="d-flex align-items-center mb-3 meta">
 				  <p class="mb-0">
-					  <span class="mr-2">November 2023</span>
+					  <span class="mr-2">October 2023 - November 2023</span>
 				  </p>
 			  </div>
 			  <h3 class="heading"><a href="https://github.com/codeind/Market-Trend-Analysis-Dashboard">Market Trend Analysis Dashboard</a></h3>
