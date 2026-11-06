@@ -27,6 +27,24 @@
   #skills-section .skill-group h3{font-size:18px;margin-bottom:16px;color:#fff}
   #skills-section .skill-chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
   #skills-section .skill-chips li{border:1px solid rgba(255,189,57,.45);color:#ccc;border-radius:999px;padding:4px 12px;font-size:14px;line-height:1.5}
+  #skills-section .band{display:flex;gap:32px;border:1px solid rgba(255,255,255,.1);border-left:4px solid #ffbd39;border-radius:8px;padding:26px 28px;margin-bottom:24px;background:linear-gradient(90deg,rgba(255,189,57,.07),rgba(255,255,255,.015) 40%)}
+  #skills-section .band.strong{border-left-color:rgba(255,189,57,.7);background:linear-gradient(90deg,rgba(255,189,57,.045),rgba(255,255,255,.015) 40%)}
+  #skills-section .band.working{border-left-color:rgba(255,189,57,.4);background:rgba(255,255,255,.015)}
+  #skills-section .band.domains{border-left-color:rgba(255,255,255,.25);background:rgba(255,255,255,.015)}
+  #skills-section .band-label{flex:0 0 200px}
+  #skills-section .band-label .level{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#ffbd39;margin-bottom:4px}
+  #skills-section .band-label h3{font-size:22px;color:#fff;margin:0 0 10px}
+  #skills-section .band-label p{font-size:13.5px;color:#999;margin:10px 0 0;line-height:1.5}
+  #skills-section .dots{display:flex;gap:6px}
+  #skills-section .dots i{width:30px;height:6px;border-radius:3px;background:rgba(255,255,255,.14)}
+  #skills-section .dots i.on{background:#ffbd39}
+  #skills-section .band-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:14px}
+  #skills-section .band-row{display:flex;gap:16px;align-items:baseline}
+  #skills-section .band-cat{flex:0 0 130px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#888;padding-top:6px}
+  #skills-section .band-row .skill-chips{flex:1}
+  #skills-section .band.core .skill-chips li{border-color:#ffbd39;color:#fff;background:rgba(255,189,57,.08)}
+  #skills-section .band.working .skill-chips li{border-color:rgba(255,189,57,.3);color:#aaa}
+  @media (max-width:767px){#skills-section .band{flex-direction:column;gap:16px;padding:22px 18px}#skills-section .band-label{flex:none}#skills-section .band-row{flex-direction:column;gap:8px}#skills-section .band-cat{flex:none;padding:0}}
   #skills-section .skill-familiar{text-align:center;color:#999;margin:8px auto 0;max-width:820px}
   #skills-section .skill-familiar span{color:#ffbd39;font-weight:600;margin-right:6px}
   #Experience-section .resume-wrap{display:block}
@@ -248,61 +266,26 @@
 	  <div class="col-md-12 heading-section text-center ftco-animate">
 		  <h1 class="big big-2">Skills</h1>
 		<h2 class="mb-4">My Skills</h2>
-		<p>Tools I use to move data from raw sources to trusted reporting.</p>
+		<p>Data Analyst &amp; Data Engineer. Skills grouped by depth, from the core of my work to tools I am building on.</p>
 	  </div>
 	</div>
-			<div class="row">
-				<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>Data Engineering</h3>
-						<ul class="skill-chips"><li>ETL/ELT Pipelines</li><li>dbt</li><li>Azure Data Factory</li><li>Azure Data Lake Storage</li><li>Azure Synapse</li><li>Microsoft Fabric</li><li>GitHub Actions CI</li><li>Curated Datasets</li><li>Data Normalization</li></ul>
-					</div>
-				</div>
-				<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>Databases &amp; Warehousing</h3>
-						<ul class="skill-chips"><li>SQL</li><li>Azure SQL</li><li>SQL Server (SSMS)</li><li>DuckDB / MotherDuck</li><li>Data Warehousing</li><li>Dimensional Modeling (Star Schema)</li><li>Stored Procedures</li><li>Query Performance Tuning</li></ul>
-					</div>
-				</div>
-				<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>Languages &amp; Processing</h3>
-						<ul class="skill-chips"><li>Python (Pandas, NumPy)</li><li>Spark (PySpark)</li><li>R</li><li>Jupyter Notebooks</li><li>Git / GitHub</li><li>Matplotlib / Seaborn</li><li>JavaScript</li></ul>
-					</div>
-				</div>
-				<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>BI &amp; Reporting</h3>
-						<ul class="skill-chips"><li>Power BI (DAX, Power Query, Service)</li><li>Tableau</li><li>Excel (VBA, Pivot Tables)</li><li>KPI Dashboards</li><li>Power Pivot</li><li>Power BI Gateway</li><li>Report Automation</li><li>Self-Service Analytics</li><li>Executive Dashboards</li><li>ERP</li><li>Oracle (Work Orders)</li><li>Microsoft Office (Word, PowerPoint)</li></ul>
-					</div>
-				</div>
-				<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>Data Management &amp; CRM</h3>
-						<ul class="skill-chips"><li>Legacy System Migration</li><li>Source-to-Target Mapping</li><li>Data Quality Testing</li><li>Data Lineage &amp; Governance</li><li>HubSpot CRM (Pipelines, Workflows, Custom Properties)</li><li>Highrise CRM</li><li>Field Mapping</li><li>Tag Architecture</li></ul>
-					</div>
-				</div>
-				<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>Machine Learning</h3>
-						<ul class="skill-chips"><li>Scikit-learn</li><li>Prophet Forecasting</li><li>Random Forest</li><li>XGBoost</li><li>Clustering</li><li>Anomaly Detection</li><li>K-Means</li><li>Feature Engineering</li><li>Model Evaluation</li><li>Classification</li><li>Isolation Forest</li></ul>
-					</div>
-				</div>
-							<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>Analytics &amp; Statistics</h3>
-						<ul class="skill-chips"><li>Statistical Analysis</li><li>Regression Analysis</li><li>Predictive Modeling</li><li>Demand Forecasting</li><li>Data Cleaning &amp; Wrangling</li><li>KPI Analysis</li><li>Ad Hoc Reporting</li><li>Data Mining</li><li>Outlier Detection</li><li>Time Series Forecasting</li></ul>
-					</div>
-				</div>
-				<div class="col-md-6 d-flex ftco-animate">
-					<div class="skill-group w-100">
-						<h3>Domain Knowledge</h3>
-						<ul class="skill-chips"><li>Operations Analytics</li><li>Supply Chain Analytics</li><li>Financial Reporting</li><li>P&amp;L Analysis</li><li>Healthcare Analytics</li><li>CRM Operations</li></ul>
-					</div>
-				</div>
+			<div class="band core ftco-animate">
+				<div class="band-label"><span class="level">Level 3</span><h3>Core</h3><div class="dots" aria-label="3 of 3"><i class="on"></i><i class="on"></i><i class="on"></i></div><p>The foundation of every data analyst and data engineering role I take on.</p></div>
+				<div class="band-body"><div class="band-row"><span class="band-cat">Data engineering</span><ul class="skill-chips"><li>ETL/ELT Pipelines</li><li>Azure Data Factory</li><li>Data Warehousing</li><li>Data Modeling (Star Schema)</li><li>Data Quality Testing &amp; Validation</li></ul></div><div class="band-row"><span class="band-cat">Languages</span><ul class="skill-chips"><li>SQL</li><li>Python (pandas, NumPy)</li><li>Git / GitHub</li></ul></div><div class="band-row"><span class="band-cat">Analytics &amp; BI</span><ul class="skill-chips"><li>Power BI (DAX, Power Query)</li><li>Excel (Pivot Tables, Power Pivot, VBA)</li><li>Data Cleaning &amp; Wrangling</li><li>Statistical Analysis</li><li>KPI &amp; Executive Dashboards</li><li>Ad Hoc Reporting &amp; Analysis</li></ul></div><div class="band-row"><span class="band-cat">Business</span><ul class="skill-chips"><li>Requirements Gathering</li><li>Stakeholder Communication</li></ul></div></div>
 			</div>
-			<p class="skill-familiar"><span>Also familiar with:</span> Azure Databricks, Azure Stream Analytics, Azure Cosmos DB, SSIS, Azure DevOps CI/CD, Microsoft Purview, Unity Catalog, BigQuery, Looker, Sigma, Hadoop, SPSS, Generative AI (LangGraph, RAG)</p>
-			<p class="skill-familiar"><span>Professional:</span> Requirements Gathering, Stakeholder Communication, Technical Documentation, Report Writing, Business Process Management, Process Analysis, Process Optimization, Kaizen &amp; Kanban, Qualitative &amp; Quantitative Methods, Project Management</p>
+			<div class="band strong ftco-animate">
+				<div class="band-label"><span class="level">Level 2</span><h3>Strong</h3><div class="dots" aria-label="2 of 3"><i class="on"></i><i class="on"></i><i></i></div><p>Used regularly at work and across my portfolio projects.</p></div>
+				<div class="band-body"><div class="band-row"><span class="band-cat">Data engineering</span><ul class="skill-chips"><li>dbt</li><li>Spark (PySpark)</li><li>Azure Data Lake Storage</li><li>Azure Synapse</li><li>Microsoft Fabric</li><li>GitHub Actions CI/CD</li><li>Data Lineage &amp; Governance</li><li>Legacy System Migration &amp; Source-to-Target Mapping</li></ul></div><div class="band-row"><span class="band-cat">Databases</span><ul class="skill-chips"><li>Azure SQL</li><li>SQL Server (SSMS)</li><li>MySQL</li><li>DuckDB / MotherDuck</li><li>Stored Procedures &amp; Query Tuning</li></ul></div><div class="band-row"><span class="band-cat">Analytics &amp; ML</span><ul class="skill-chips"><li>Tableau</li><li>Matplotlib / Seaborn</li><li>Report Automation</li><li>Data Storytelling</li><li>A/B Testing</li><li>Regression Analysis</li><li>Time Series &amp; Demand Forecasting (Prophet)</li><li>Machine Learning with scikit-learn (Classification, Clustering)</li><li>Jupyter Notebooks</li></ul></div><div class="band-row"><span class="band-cat">Business</span><ul class="skill-chips"><li>HubSpot CRM (Pipelines, Workflows, Properties)</li><li>As-Is / To-Be Process Mapping</li><li>Technical Documentation</li><li>Project Management</li></ul></div></div>
+			</div>
+			<div class="band working ftco-animate">
+				<div class="band-label"><span class="level">Level 1</span><h3>Working knowledge</h3><div class="dots" aria-label="1 of 3"><i class="on"></i><i></i><i></i></div><p>Used on projects and ready to build on.</p></div>
+				<div class="band-body"><div class="band-row"><span class="band-cat">Engineering &amp; dev</span><ul class="skill-chips"><li>REST APIs</li><li>SQLite</li><li>pytest</li><li>HTML &amp; CSS</li><li>JavaScript (Chart.js)</li><li>Django &amp; Django REST Framework</li><li>Excel Automation (openpyxl)</li><li>Visual Studio</li></ul></div><div class="band-row"><span class="band-cat">Analytics &amp; ML</span><ul class="skill-chips"><li>R</li><li>XGBoost</li><li>Anomaly Detection (Isolation Forest)</li><li>Model Explainability (SHAP)</li><li>Image Processing (OpenCV)</li></ul></div><div class="band-row"><span class="band-cat">Business &amp; systems</span><ul class="skill-chips"><li>SharePoint</li><li>Oracle ERP (Work Orders)</li><li>Highrise CRM</li><li>Kaizen &amp; Kanban</li><li>Business Model Canvas</li></ul></div></div>
+			</div>
+			<div class="band domains ftco-animate">
+				<div class="band-label"><h3>Domains</h3><p>Where I have applied these skills.</p></div>
+				<div class="band-body"><div class="band-row"><ul class="skill-chips"><li>Operations Analytics</li><li>Supply Chain Analytics</li><li>Financial Reporting &amp; P&amp;L</li><li>Healthcare Analytics</li><li>HR &amp; Workforce Analytics</li><li>CRM Operations</li><li>E-commerce Analytics</li></ul></div></div>
+			</div>
+			<p class="skill-familiar"><span>Also familiar with:</span> Azure Databricks, Azure Stream Analytics, Azure Cosmos DB, SSIS, Azure DevOps, Microsoft Purview, Unity Catalog, BigQuery, Looker, Sigma, Hadoop, SPSS, Generative AI (LangGraph, RAG)</p>
 		</div>
 	</section>
 
